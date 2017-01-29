@@ -1,0 +1,30 @@
+h1{
+    text-align: -webkit-center;
+}
+
+#titre{
+    margin-left: 100px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    display: inline-block;
+}
+#candidat{
+    margin-left: 180px;
+}
+
+.second{
+    margin-top: 70px;
+}
+
+#votantcreate{
+    margin-left: 180px;
+}
+
+#click{
+    margin-top: 30px;
+    margin-left: 470px;
+}
+
+#candidatlist{
+    margin-left: 162px;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Sarbat</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!----------------------FONT--------------------->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/d.css">
+    <link rel="stylesheet" type="text/css" href="/css/reset-mayer.css"/>
+    <link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="/css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="/css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="/css/component.css" />
+		<script src="/js/modernizr.custom.js"></script>
+    
+   
+    <!----------------------------------------------->
+    
+    
+    
+</head>
+<body>
+<!--------------------------------------------------> 
+<!------------------- HOME ------------------------->
+<!-------------------------------------------------->    
+
+ 
+<!--------------------------------------------------> 
+<!------------------- PRESIDENT -------------------->
+<!-------------------------------------------------->    
+
+<h1>Elections</h1>
+   
+   
+<h2 id="titre">Découvrir les candidats</h2>
+<ul id="candidatlist"></ul>
+<button id="candidat">Load president</button>
+   
+   
+<!-- <h3>positions</h3>
+    <ul id="positionlist"></ul>
+
+    <button id="position">Load position</button>
+ --> 
+<div class="second">
+    <h2 id="titre">Enregistrez vous</h2>
+    <form id="votantcreate">
+        <input type="text" id="firstname" name="firstame" placeholder="Enter votre prenom" />
+        <input type="text" id="lastname" name="lastname" placeholder="Enter votre nom" />
+        <input type="text" id="age" name="age" placeholder="Enter votre age" />
+        <input type="submit" value="create" />
+    </form>
+</div>    
+    
+<section>
+    <form id="choice" class="ac-custom ac-radio ac-swirl" autocomplete="off">
+        <h2>Pour qui allez-vous voter ?</h2>
+        <ul>
+            <li><input id="r9" name="r3" type="radio"><label for="r9">Marc Souchet</label></li>
+            <li><input id="r10" name="r3" type="radio"><label for="r10">Zinedine Zidane</label></li>
+            <li><input id="r11" name="r3" type="radio"><label for="r11">Doc Gyneco</label></li>
+        </ul>
+    </form>
+</section>
+   
+<button id="click" type="button">valider</button>
+
+<!--<script>
+    $(function(){
+        $('#president').click(function(){
+            $.get('/api/presidents', function(data){
+                
+                $('#presidentslist').empty();
+                for(var i=0; i=data.length; i++){
+                    var _li = '<li>'+ data[i].firstname +''+ data [i].lastname +'</li>';
+                    $('presidentslist').append(_li);
+                }
+            })
+        })
+        
+    })
+ </script>  -->     
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>            
+        
+<script src="/js/svgcheckbx.js"></script>
+</body>
+</html>
